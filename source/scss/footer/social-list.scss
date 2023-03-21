@@ -1,0 +1,22 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 29px;
+}
+
+.social-list__link {
+  color: $aubergine;
+
+  :hover {
+    color: $puerto-rico2;
+  }
+
+  :active {
+    color: $puerto-rico2;
+    opacity: 0.3;
+  }
+}

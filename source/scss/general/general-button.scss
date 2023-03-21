@@ -1,0 +1,31 @@
+.general-button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $charcoal;
+  background-color: $white;
+  border: 2px solid $charcoal;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+.general-button:hover {
+  background-color: $charcoal;
+  color: $white;
+}
+
+.general-button:active {
+  background-color: $charcoal;
+  color: rgba($white, 0.3);
+}

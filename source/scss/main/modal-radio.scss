@@ -1,0 +1,55 @@
+.modal-radio {
+  margin: 0;
+  padding: 0 0 31px;
+  border: none;
+}
+
+.modal-radio__title {
+  font-size: 15px;
+  line-height: 30px;
+  color: $charcoal;
+  margin: 0 auto 22px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+}
+
+.modal-radio__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.modal-radio__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $charcoal;
+  width: 82px;
+  min-height: 52px;
+  display: block;
+  text-align: center;
+  border: 2px solid rgba($charcoal, 0.1);
+  padding: 17px 10px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    padding-bottom: 8px;
+  }
+}
+
+.modal-radio__input:checked + .modal-radio__label {
+  border-color: $downy;
+}
+
+.modal-radio__input:focus-visible + .modal-radio__label {
+  outline: 2px solid $dark-cyan;
+  outline-offset: 2px;
+}

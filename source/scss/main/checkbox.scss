@@ -1,0 +1,94 @@
+.checkbox {
+  @media (min-width: $tablet-width) {
+    background-color: $white-smoke;
+    padding-bottom: 50px;
+  }
+}
+
+.checkbox__list {
+  margin: 20px 0 32px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 50px 0 50px 166px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 27px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 242px);
+    margin-left: 175px;
+    gap: 25px 20px;
+  }
+}
+
+.checkbox__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  min-height: 38px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 82px;
+  }
+}
+
+.checkbox__input[type="checkbox"]:checked + .checkbox__mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 38px;
+  height: 38px;
+  content: "";
+  transform: translate(-50%, -50%);
+  background-image: url("../img/checkbox/checkbox-active.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+    background-size: 52px 52px;
+  }
+}
+
+.checkbox__input:hover + .checkbox__mark {
+  border-color: $downy2;
+}
+
+.checkbox__input:active + .checkbox__mark {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.checkbox__input:focus-visible + .checkbox__mark {
+  outline: 2px solid $downy2;
+  outline-offset: 5px;
+}
+
+.checkbox__mark {
+  width: 38px;
+  height: 38px;
+  background-color: transparent;
+  border: 1px solid $charcoal;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+}
