@@ -120,7 +120,7 @@
   font-style: normal;
   font-size: 17px;
   color: $black;
-  margin-top: 31px;
+  margin: 31px 0 0;
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -138,12 +138,15 @@
 
 .review__link {
   font-weight: 400;
+  font-size: 17px;
   line-height: 20px;
   color: $charcoal;
+  margin: 4px 0 0;
 
   @media (min-width: $tablet-width) {
     line-height: 35px;
-    font-size: 17px;
+    max-width: 400px;
+    margin-top: 0;
   }
 }
 
