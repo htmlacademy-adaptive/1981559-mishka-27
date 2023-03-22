@@ -36,6 +36,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 114px;
+
     &::before {
       background-size: 1250px 34px;
       background-position: bottom;
@@ -162,4 +163,3 @@
     opacity: 0.3;
   }
 }
-
