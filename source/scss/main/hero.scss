@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 110px;
     background-image: url("../img/hero/hero-desktop.jpg");
-    background-position: center -65px;
+    background-position: center -46px;
     position: relative;
 
     &::before {
@@ -47,7 +47,7 @@
 
 .hero__container {
   @media (max-width: $mobile-width) {
-    margin: 0;
+    padding: 0;
   }
 }
 
