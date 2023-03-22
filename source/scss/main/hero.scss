@@ -11,9 +11,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 91px;
+    padding-top: 110px;
     background-image: url("../img/hero/hero-desktop.jpg");
-    background-position: center -65px;
+    background-position: center -46px;
     position: relative;
 
     &::before {
@@ -35,6 +35,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 114px;
+
     &::before {
       background-size: 1250px 34px;
       background-position: bottom;
@@ -46,7 +48,7 @@
 
 .hero__container {
   @media (max-width: $mobile-width) {
-    margin: 0;
+    padding: 0;
   }
 }
 
@@ -161,4 +163,3 @@
     opacity: 0.3;
   }
 }
-

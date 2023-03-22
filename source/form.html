@@ -32,87 +32,73 @@
 </head>
 <body>
 <header class="main-header">
-  <div class="main-header__container container">
+  <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
     <a class="main-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1150px)" srcset="img/header/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
-        <img src="img/header/logo-mobile.svg" width="86" height="35" alt="Mishka.">
+        <img class="main-header__image" src="img/header/logo-mobile.svg" width="86" height="35" alt="Mishka.">
       </picture>
     </a>
-    <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
-      <button class="main-header__toggle" type="button">
+    <button class="main-header__toggle" type="button">
       <span class="visually-hidden">
         Открыть меню.
       </span>
-      </button>
-      <ul class="main-header__list main-header__list--navigation">
-        <li class="main-header__item main-header__item--navigation">
-          <a href="#" class="main-header__link main-header__link--navigation">
-            Каталог товаров
-          </a>
-        </li>
-        <li class="main-header__item main-header__item--navigation">
-          <a href="#" class="main-header__link main-header__link--navigation">
-            Вязание на заказ
-          </a>
-        </li>
-      </ul>
-      <ul class="main-header__list main-header__list--user">
-        <li class="main-header__item main-header__item--user">
-          <a href="#" class="main-header__link main-header__link--user">
+    </button>
+    <ul class="main-header__list-navigation">
+      <li class="main-header__item-navigation">
+        <a href="#" class="main-header__link main-header__link--navigation">
+          Каталог товаров
+        </a>
+      </li>
+      <li class="main-header__item-navigation">
+        <a href="#" class="main-header__link main-header__link--navigation">
+          Вязание на заказ
+        </a>
+      </li>
+    </ul>
+    <ul class="main-header__list-user">
+      <li class="main-header__item-user">
+        <a href="#" class="main-header__link main-header__link--user">
             <span class="main-header__text">
               Поиск по сайту
             </span>
-            <svg class="main-header__icon" width="18" height="18">
-              <use xlink:href="img/sprite.svg#search-icon"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="main-header__item main-header__item--user">
-          <a href="#" class="main-header__link main-header__link--user">
-            Корзина: пока пуста
-            <svg class="main-header__icon" width="21" height="18">
-              <use xlink:href="img/sprite.svg#cart-icon"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="main-header__secondary main-header__secondary--form">
-    <div class="main-header__secondary-container container">
-      <ul class="main-header__list main-header__list--secondary">
-        <li class="main-header__item">
-          <a href="#" class="main-header__link main-header__link--secondary">
-            Каталог товаров
-          </a>
-        </li>
-        <li class="main-header__item">
-          <a href="#" class="main-header__link main-header__link--secondary">
-            Вязание на заказ
-          </a>
-        </li>
-      </ul>
-      <ul class="main-header__list main-header__list--tertiary">
-        <li class="main-header__item">
-          <a href="#" class="main-header__link main-header__link--tertiary">
-            Новые поступления
-          </a>
-        </li>
-        <li class="main-header__item">
-          <a href="#" class="main-header__link main-header__link--tertiary">
-            Распродажа
-          </a>
-        </li>
-      </ul>
-      <p class="main-header__additional-text">
-        Бесплатная доставка по России
-      </p>
-    </div>
-  </div>
+          <svg class="main-header__icon main-header__icon--search" width="18" height="18">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="main-header__item-user">
+        <a href="#" class="main-header__link main-header__link--user">
+            <span class="main-header__icon-name">
+              Корзина: пока пуста
+            </span>
+          <svg class="main-header__icon" width="21" height="18">
+            <use xlink:href="img/sprite.svg#cart-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="main-header__additional-text">
+      Бесплатная доставка по России
+    </p>
+    <!--      Необходимо для отображения фона на tablet и desktop-->
+    <div class="main-header__background main-header__background--other-pages"></div>
+    <ul class="main-header__additional-list">
+      <li class="main-header__additional-item">
+        <a href="#" class="main-header__link main-header__link--additional">
+          Новые поступления
+        </a>
+      </li>
+      <li class="main-header__additional-item">
+        <a href="#" class="main-header__link main-header__link--additional">
+          Распродажа
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
-<main>
+<main class="main">
   <section class="form-hero">
     <div class="container">
       <h1 class="form-hero__title">
@@ -121,14 +107,11 @@
     </div>
   </section>
   <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
-    <div class="container">
-      <p class="order-form__slogan">
-        Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.
-      </p>
-    </div>
-
+    <p class="order-form__slogan">
+      Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.
+    </p>
     <fieldset class="order-form__select radio-select">
-      <div class="order-form__container container">
+      <div class="order-form__radio-container container">
         <h2 class="order-form__title">Тип</h2>
         <ul class="radio-select__list">
           <li class="radio-select__item">
@@ -148,9 +131,8 @@
         </ul>
       </div>
     </fieldset>
-
     <fieldset class="order-form__select checkbox">
-      <div class="order-form__container container">
+      <div class="order-form__checkbox-container container">
         <h2 class="order-form__title">Цвет</h2>
         <ul class="checkbox__list">
           <li class="checkbox__item">
@@ -198,9 +180,8 @@
         </ul>
       </div>
     </fieldset>
-
-    <fieldset class="order-form__select order-form__select--name">
-      <div class="order-form__container container">
+    <fieldset class="order-form__select">
+      <div class="order-form__name-container container">
         <h2 class="order-form__title">ФИО</h2>
         <div class="order-form__field-wrapper">
           <label class="order-form__label" for="order-form-name">Имя:</label>
@@ -216,29 +197,26 @@
         </div>
       </div>
     </fieldset>
-
     <fieldset class="order-form__select order-form__select--contact">
-      <div class="order-form__container order-form__container--contact container">
-        <label class="order-form__title order-form__title--contact" for="order-form-phone">Тел</label>
+      <div class="order-form__contact-container container">
+        <label class="order-form__title" for="order-form-phone">Тел</label>
           <input class="order-form__input order-form__input--contact" id="order-form-phone" name="order-form-phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           <svg class="order-form__icon" width="25" height="24">
             <use xlink:href="img/sprite.svg#phone-icon"></use>
           </svg>
       </div>
-      <div class="order-form__container order-form__container--contact container">
-        <label class="order-form__title order-form__title--contact" for="order-form-mail">E-mail</label>
+      <div class="order-form__contact-container container">
+        <label class="order-form__title" for="order-form-mail">E-mail</label>
         <input class="order-form__input order-form__input--contact" id="order-form-mail" name="order-form-mail" type="email" placeholder="Ваш Email*" required>
         <svg class="order-form__icon" width="32" height="21">
           <use xlink:href="img/sprite.svg#mail-icon"></use>
         </svg>
       </div>
     </fieldset>
-
-    <div class="order-form__container container">
-      <label class="order-form__title order-form__title--optional" for="optional">Доп</label>
+    <div class="order-form__optional-container container">
+      <label class="order-form__title" for="optional">Доп</label>
       <textarea class="order-form__optional" id="optional" name="optional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
     </div>
-
     <div class="order-form__requirement-container container">
       <p class="order-form__requirement">
         *Поля обязательны для заполнения
@@ -252,11 +230,11 @@
 </main>
 <footer class="footer">
   <div class="footer__link-container container">
-    <a href="#" class="footer__footer-logo">
+    <a href="index.html" class="footer__footer-logo">
       <span class="visually-hidden">
         На главную страницу.
       </span>
-      <svg width="102" height="34">
+      <svg class="footer__logo-icon" width="102" height="34">
         <use xlink:href="img/sprite.svg#footer-logo"></use>
       </svg>
     </a>
@@ -266,7 +244,7 @@
           <span class="visually-hidden">
             Вконтакте.
           </span>
-          <svg width="28" height="22">
+          <svg class="social-list__icon" width="28" height="22">
             <use xlink:href="img/sprite.svg#vkontakte"></use>
           </svg>
         </a>
@@ -276,7 +254,7 @@
           <span class="visually-hidden">
             YouTube.
           </span>
-          <svg width="28" height="22">
+          <svg class="social-list__icon" width="28" height="22">
             <use xlink:href="img/sprite.svg#youtube"></use>
           </svg>
         </a>
@@ -286,17 +264,17 @@
           <span class="visually-hidden">
             Телеграм.
           </span>
-          <svg width="28" height="22">
+          <svg class="social-list__icon" width="28" height="22">
             <use xlink:href="img/sprite.svg#telegram"></use>
           </svg>
         </a>
       </li>
     </ul>
     <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
-      <span>
+      <span class="footer__copyright-icon-text">
         Разработано
       </span>
-      <svg width="27" height="34">
+      <svg class="footer__copyright-icon" width="27" height="34">
         <use xlink:href="img/sprite.svg#htmlacademy"></use>
       </svg>
     </a>

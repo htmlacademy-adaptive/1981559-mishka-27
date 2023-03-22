@@ -3,7 +3,7 @@
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 69px;
+    padding-top: 0;
     padding-bottom: 57px;
   }
 
@@ -19,29 +19,17 @@
 
 .location-container {
   @media (min-width: $tablet-width) {
+    padding-top: 69px;
     position: relative;
+    background-image: url("../img/location/flag.svg");
+    background-repeat: no-repeat;
+    background-position: right 53px top 46px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 79px;
     padding-left: 174px;
-  }
-}
-
-.location__icon {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: -23px;
-    right: 3px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 63px;
-    top: 62px;
+    background-position: left 62px top 62px;
   }
 }
 
@@ -78,7 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 81px;
+    margin-bottom: 77px;
   }
 }
 
@@ -162,6 +150,8 @@
 }
 
 .location__button {
+  margin: 0 30px;
+
   @media (min-width: $tablet-width) {
     max-width: 230px;
     margin: 0 auto;
@@ -169,6 +159,7 @@
 
   @media (min-width: $desktop-width) {
     width: 230px;
-    margin-left: 57px;
+    margin-left: 175px;
+    align-self: start;
   }
 }

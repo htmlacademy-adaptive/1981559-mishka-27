@@ -7,8 +7,9 @@
   gap: 8px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    transform: translateX(-16px);
     gap: 33px;
-    margin: 0 auto 56px;
     width: 332px;
   }
 
