@@ -31,89 +31,68 @@
   <!--  favicons end-->
 </head>
 <body>
+
 <header class="main-header">
-  <div class="main-header__container container">
+  <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
     <a class="main-header__logo" href="#">
       <picture>
         <source media="(min-width: 1150px)" srcset="img/header/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
-        <img src="img/header/logo-mobile.svg" width="86" height="35" alt="Mishka.">
+        <img class="main-header__image" src="img/header/logo-mobile.svg" width="86" height="35" alt="Mishka.">
       </picture>
     </a>
-    <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
-      <button class="main-header__toggle" type="button">
+    <button class="main-header__toggle" type="button">
       <span class="visually-hidden">
         Открыть меню.
       </span>
-      </button>
-      <ul class="main-header__list main-header__list--navigation">
-        <li class="main-header__item main-header__item--navigation">
-          <a href="#" class="main-header__link main-header__link--navigation">
-            Каталог товаров
-          </a>
-        </li>
-        <li class="main-header__item main-header__item--navigation">
-          <a href="form.html" class="main-header__link main-header__link--navigation">
-            Вязание на заказ
-          </a>
-        </li>
-      </ul>
-      <ul class="main-header__list main-header__list--user">
-        <li class="main-header__item main-header__item--user">
-          <a href="#" class="main-header__link main-header__link--user">
+    </button>
+    <ul class="main-header__list-navigation">
+      <li class="main-header__item-navigation">
+        <a href="#" class="main-header__link main-header__link--navigation">
+          Каталог товаров
+        </a>
+      </li>
+      <li class="main-header__item-navigation">
+        <a href="form.html" class="main-header__link main-header__link--navigation">
+          Вязание на заказ
+        </a>
+      </li>
+    </ul>
+
+
+    <ul class="main-header__list-user">
+      <li class="main-header__item-user">
+        <a href="#" class="main-header__link main-header__link--user">
             <span class="main-header__text">
               Поиск по сайту
             </span>
-            <svg class="main-header__icon" width="18" height="18">
-              <use xlink:href="img/sprite.svg#search-icon"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="main-header__item main-header__item--user">
-          <a href="#" class="main-header__link main-header__link--user">
+          <svg class="main-header__icon" width="18" height="18">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="main-header__item-user">
+        <a href="#" class="main-header__link main-header__link--user">
             <span class="main-header__icon-name">
               Корзина: пока пуста
             </span>
-            <svg class="main-header__icon" width="21" height="18">
-              <use xlink:href="img/sprite.svg#cart-icon"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="main-header__secondary">
-    <div class="main-header__secondary-container container">
-      <ul class="main-header__list main-header__list--secondary">
-        <li class="main-header__item">
-          <a href="#" class="main-header__link main-header__link--secondary">
-            Каталог товаров
-          </a>
-        </li>
-        <li class="main-header__item">
-          <a href="#" class="main-header__link main-header__link--secondary">
-            Вязание на заказ
-          </a>
-        </li>
-      </ul>
-      <ul class="main-header__list main-header__list--tertiary">
-        <li class="main-header__item">
-          <a href="#" class="main-header__link main-header__link--tertiary">
-            Новые поступления
-          </a>
-        </li>
-        <li class="main-header__item">
-          <a href="#" class="main-header__link main-header__link--tertiary">
-            Распродажа
-          </a>
-        </li>
-      </ul>
-      <p class="main-header__additional-text">
-        Бесплатная доставка по России
-      </p>
-    </div>
-  </div>
+          <svg class="main-header__icon" width="21" height="18">
+            <use xlink:href="img/sprite.svg#cart-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+
+
+    <p class="main-header__additional-text">
+      Бесплатная доставка по России
+    </p>
+    <!--      Необходимо для отображения фона на tablet и desktop-->
+    <div class="main-header__background"></div>
+  </nav>
 </header>
+
 <main>
   <section class="hero">
     <div class="hero__container container">
