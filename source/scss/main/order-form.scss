@@ -37,8 +37,8 @@
 .order-form__select--contact {
   @media (min-width: $tablet-width) {
     background-color: $white-smoke;
-    padding-top: 60px;
-    padding-bottom: 16px;
+    padding-top: 48px;
+    padding-bottom: 28px;
     margin-bottom: 50px;
   }
 }
@@ -93,13 +93,24 @@
   }
 }
 
-.order-form__container--contact {
+.order-form__contact-container {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 146px 1fr;
+    gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 58px;
+    padding: 0 225px 0 110px;
+    grid-template-columns: 95px 1fr;
+  }
+}
+
+.order-form__contact-container:first-child {
+  @media (max-width: $mobile-width) {
+    margin-top: 8px;
   }
 }
 
@@ -136,15 +147,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 100px;
-  }
-}
-
-.order-form__title--contact {
-  margin-bottom: 17px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    top: 6px;
   }
 }
 
@@ -214,6 +216,7 @@
     padding-left: 17px;
     flex-grow: 1;
     margin-bottom: 0;
+    align-self: end;
   }
 }
 
@@ -222,16 +225,36 @@
 }
 
 .order-form__input--contact {
-  padding-bottom: 17px;
   margin-bottom: 32px;
+  padding-bottom: 17px;
   width: 100%;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 16px;
+  }
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    margin-left: 167px;
-    margin-bottom: 34px;
+    margin-bottom: 22px;
+    margin-top: 12px;
     padding-bottom: 14px;
     width: unset;
+  }
+}
+
+.order-form__icon {
+  position: absolute;
+  right: 37px;
+  bottom: 48px;
+  color: rgba($black, 0.2);
+
+  @media (min-width: $tablet-width) {
+    right: 74px;
+    bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 230px;
   }
 }
 
@@ -241,21 +264,6 @@
 
 .order-form__input--contact:not(:placeholder-shown) + .order-form__icon {
   color: $downy2;
-}
-
-.order-form__icon {
-  position: absolute;
-  right: 5px;
-  bottom: 48px;
-  color: rgba($black, 0.2);
-
-  @media (min-width: $tablet-width) {
-    right: 26px;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 230px;
-  }
 }
 
 .order-form__optional {
