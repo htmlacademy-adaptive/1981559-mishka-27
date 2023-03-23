@@ -46,3 +46,8 @@ img {
   max-width: 100%;
   object-fit: contain;
 }
+
+//Sticky footer
+.main {
+  flex-grow: 1;
+}
