@@ -24,6 +24,7 @@
 
 .cards__image {
   display: block;
+  width: 100%;
 }
 
 .cards__title {
@@ -55,12 +56,14 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
+  max-width: 150px;
 }
 
 .cards__button {
   padding: 0;
   background-color: transparent;
   border: none;
+  align-self: end;
 }
 
 .cards__icon {
