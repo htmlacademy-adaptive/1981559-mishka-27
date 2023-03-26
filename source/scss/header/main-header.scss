@@ -157,6 +157,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px 37px;
+    max-width: 350px;
   }
 
   @media (min-width: $desktop-width) {
@@ -357,6 +358,7 @@
     align-self: end;
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    max-width: 350px;
   }
 
   @media (min-width: $desktop-width) {
