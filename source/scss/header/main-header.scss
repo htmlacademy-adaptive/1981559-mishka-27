@@ -163,6 +163,7 @@
   @media (min-width: $desktop-width) {
     grid-row: 1 / 2;
     margin: 0;
+    max-width: 430px;
   }
 }
 

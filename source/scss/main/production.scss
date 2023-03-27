@@ -1,0 +1,51 @@
+.production__container {
+  margin: 0 30px 60px;
+  padding-top: 22px;
+  padding-bottom: 33px;
+  outline: 1px solid #ececec;
+}
+
+.production__title {
+  margin: 0 0 26px;
+  padding-left: 91px;
+  font-size: 17px;
+  line-height: 24px;
+  background-image: url("../img/catalog/video/camera.svg");
+  background-repeat: no-repeat;
+  background-position: top 13px left 34px;
+  min-height: 48px;
+  max-width: 240px;
+  box-sizing: border-box;
+}
+
+.production__video {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.production__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.production__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.production__description {
+  margin: 0 33px 40px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $charcoal;
+}
+
+.production__button {
+  max-width: 192px;
+  margin: 0 auto;
+}
