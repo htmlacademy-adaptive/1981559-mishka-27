@@ -45,7 +45,18 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    width: 316px;
+    width: 315px;
+    outline-offset: -1px;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.cards__item:focus-within {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
