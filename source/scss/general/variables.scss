@@ -45,4 +45,10 @@ body {
 img {
   max-width: 100%;
   object-fit: contain;
+  display: block;
+}
+
+//Sticky footer
+.main {
+  flex-grow: 1;
 }
