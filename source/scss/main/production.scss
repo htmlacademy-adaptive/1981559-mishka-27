@@ -19,7 +19,8 @@
       grid-row: 2 / 5;
       width: 100%;
       height: 100%;
-      border: 1px solid $gallery;
+      outline: 1px solid $gallery;
+      outline-offset: -1px;
       z-index: -1;
     }
   }
@@ -33,6 +34,18 @@
       grid-row: 1 / 5;
       grid-column: 2 / 3;
     }
+  }
+}
+
+.production__container:hover {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.production__container:focus-within {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
