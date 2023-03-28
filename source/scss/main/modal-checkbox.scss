@@ -1,0 +1,64 @@
+.modal-checkbox {
+  margin: 0;
+  padding: 0 0 31px;
+  border: none;
+}
+
+.modal-checkbox__title {
+  font-size: 15px;
+  line-height: 30px;
+  color: $charcoal;
+  margin: 0 auto 22px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+}
+
+.modal-checkbox__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.modal-checkbox__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $charcoal;
+  width: 82px;
+  min-height: 52px;
+  display: block;
+  text-align: center;
+  border: 2px solid rgba($charcoal, 0.1);
+  padding: 17px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    padding-bottom: 8px;
+  }
+}
+
+.modal-checkbox__input:checked + .modal-checkbox__label {
+  border-color: $downy;
+}
+
+.modal-checkbox__input:focus-visible + .modal-checkbox__label {
+  outline: 2px solid $dark-cyan;
+  outline-offset: 2px;
+}
+
+.modal-checkbox__label:hover {
+  border-color: rgba($charcoal, 0.3);
+}
+
+.modal-checkbox__label:active {
+  border-color: rgba(68, 68, 68, 0.3);
+}
