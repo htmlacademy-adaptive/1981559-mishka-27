@@ -28,4 +28,10 @@
     outline: 2px solid $downy;
     outline-offset: 2px;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+    border-color: rgba($charcoal, 0.3);
+  }
 }
