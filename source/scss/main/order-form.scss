@@ -211,6 +211,15 @@
     border-color: rgba($charcoal, 0.3);
   }
 
+  &:invalid {
+    outline: 2px solid $error;
+    outline-offset: 4px;
+  }
+
+  &:placeholder-shown {
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;
