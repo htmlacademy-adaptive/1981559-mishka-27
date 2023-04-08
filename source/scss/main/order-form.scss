@@ -205,6 +205,21 @@
     border-color: $downy2;
   }
 
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+    border-color: rgba($charcoal, 0.3);
+  }
+
+  &:invalid {
+    outline: 2px solid $error;
+    outline-offset: 4px;
+  }
+
+  &:placeholder-shown {
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;
@@ -301,6 +316,12 @@
 
   &:not(:placeholder-shown) {
     border-color: $downy2;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+    border-color: rgba($charcoal, 0.3);
   }
 
   @media (min-width: $tablet-width) {

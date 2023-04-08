@@ -67,6 +67,11 @@
   outline-offset: 3px;
 }
 
+.checkbox__input:disabled + .checkbox__mark {
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
 .radio-select__mark {
   width: 40px;
   height: 40px;
