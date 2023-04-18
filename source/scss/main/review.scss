@@ -205,6 +205,11 @@
   opacity: 0.3;
 }
 
+.review__control:disabled .review__icon {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
 .review__button {
   width: 100%;
 
