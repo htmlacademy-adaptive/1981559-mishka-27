@@ -67,7 +67,7 @@
   outline-offset: 3px;
 }
 
-.checkbox__input:disabled + .checkbox__mark {
+.radio-select:disabled + .radio-select__mark {
   cursor: not-allowed;
   opacity: 0.2;
 }
